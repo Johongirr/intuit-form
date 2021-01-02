@@ -1,0 +1,210 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ body {
+     background-color: #eceef1;
+     line-height: 1.6;
+ }
+/* ============ Css variables   ============== */
+:root {
+    --white: #fff;
+    --primary-color: #505050;
+    --secondary-color: #404040;
+    --tertiary-color: #757575;
+    --dark-gray: #393a3d;
+}
+
+/* ============ General styles  ============== */
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.btn {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid darkblue;
+    padding: 0.3rem 1.4rem;
+    border-radius: 5px;
+    background-color: #0077c5;
+}
+input {
+    display: block;
+    width: 100%;
+}
+
+.pr-1 {
+    padding-right: 1rem;
+}
+.pb-2 {
+    padding-bottom: 2rem;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.text--center{
+    text-align: center;
+}
+.d--block {
+    display: block;
+}
+fieldset {
+    border: none;
+}
+li {
+    list-style-type: none;
+}
+.lightblue {
+    background-color: lightseagreen;
+}
+.green {
+    background-color: lime;
+}
+.red {
+    background-color: red;
+}
+
+/* ============ Container ============== */
+.container {
+    width: 95%;
+    max-width: 400px;
+    margin: 0 auto;
+    max-height: 900px;
+}
+
+/* ============ Header sign in  ============== */
+.header .header__sign-in {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 2rem 0 0;
+    color: var(--primary-color);
+}
+.header .header__sign-in .header__sign-in-id {
+    font-size: 14px;
+}
+
+/* ============ Main  ============== */
+.main {
+    margin-top: 4rem;
+}
+.main .main__header .main__header-title {
+    color: var(--tertiary-color);
+}
+.main .main__header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.main .main__header .main__header-ad-container a{
+    text-decoration: none;
+    
+}
+.main .main__header .main__header-ad-container .round {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: var(--white);
+}
+.main .main__header .main__header-ad-text-sm {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: var(--secondary-color);
+}
+.main .container {
+    background-color: var(--white);
+}
+.main  .form {
+    padding: 2rem 1.5rem;
+}
+.main .form .form__inputs-main-title {
+    font-size: 1.8rem;
+    
+    color: var(--secondary-color);
+}
+.main .form .form__inputs-sub-title {
+    color: var(--primary-color);
+}
+.main .form .form__learn-more {
+    color: #0077c5;
+    text-decoration: none;
+}
+.main .form input {
+    padding: 0.6rem 0.3rem;
+}
+.main .form label {
+    color: var(--secondary-color);
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+.main .form .phone__inform {
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+.main .form .form__submit-btn {
+    padding: 0.5rem 0;
+    border: none;
+}
+.main .form__privacy {
+    padding: 0 2rem;
+    font-size: 14px;
+    color: var(--tertiary-color);
+}
+.main .form__privacy a {
+    text-decoration: none;
+    color: #0077c5;
+}
+.main .container__footer {
+    background-color: #e3e7ee;
+    padding: 1rem 2rem;
+    font-size: 14px;
+    color: var(--tertiary-color);
+}
+.main .container__footer a {
+    text-decoration: none;
+    color: #0077c5;
+}
+.main .main__footer {
+    width: 95%;
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--secondary-color); 
+    padding-bottom: 1rem;   
+     
+}
+.main .nav__list {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    
+}
+.main .nav__list .nav__list-link {
+    color: var(--secondary-color);
+}
+
+.main .copyright {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.3;
+}
+/* ========= Privacy settings =========*/
+.privacy-settings {
+    position: fixed;
+    bottom: 0;
+    right: 3rem;
+    background-color: var(--primary-color);
+    padding: 0.4rem 1rem;
+}
+.privacy-settings a {
+    color: var(--white);
+}
+
+
+
+@media(max-width: 500px) {
+    .main .container__footer {
+        padding: 1rem 0.8rem;
+    }
+}
